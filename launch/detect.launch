@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="det_pkg" type="detect" name="detect_node" output="screen">
+	    <rosparam file="$(find det_pkg)/params/yolov10.yaml" command="load"/>
+    </node>
+</launch>
